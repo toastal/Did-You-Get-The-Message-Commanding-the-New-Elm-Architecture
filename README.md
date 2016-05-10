@@ -96,15 +96,15 @@ Literally.
 
 ## The 2016 Front-End Developer Toolkit
 
-JavaScript    | Elm
---------------------------
-Babel         | Elm
-Redux         | Elm
-Flow          | Elm
-Ramda, Lodash | Elm
-React         | elm-html\*
-ESLint        | elm-format
-Mocha, et.al  | elm-test
+| JavaScript    | Elm        |
+|----------------------------|
+| Babel         | Elm        |
+| Redux         | Elm        |
+| Flow          | Elm        |
+| Ramda, Lodash | Elm        |
+| React         | elm-html\* |
+| ESLint        | elm-format |
+| Mocha, et.al  | elm-test   |
 
 \* For rendering stateless components only
 
