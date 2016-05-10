@@ -89,3 +89,108 @@ A story of stores... state belongs outside the components, data flows one way
 ## The Elm Architecture
 
 Literally.
+
+
+* * *
+
+
+## The 2016 Front-End Developer Toolkit
+
+JavaScript    | Elm
+--------------------------
+Babel         | Elm
+Redux         | Elm
+Flow          | Elm
+Ramda, Lodash | Elm
+React         | elm-html\*
+ESLint        | elm-format
+Mocha, et.al  | elm-test
+
+\* For rendering stateless components only
+
+
+* * *
+
+
+![That important meme image]
+
+
+* * *
+
+
+## Babel
+
+`elm-make` compiles to ECMAScript 5
+
+
+* * *
+
+
+## Flow
+
+Elm's a strong statically-typed language with type inference
+
+
+- - -
+
+
+### This fails
+
+```elm
+import Graphics.Element exposing (Element, show)
+
+
+exclaim : String -> String
+exclaim string =
+   string ++ "!"
+
+
+view : String -> Element
+view =
+  exclaim >> show
+
+
+main : Element
+main =
+  view 1
+```
+
+
+* * *
+
+
+## Ramda / Lodash & Stateless Components
+
+The core library has utility functions for Lists, Arrays, Sets, Dictionaries, Strings, Signals, Maybes...
+
+`elm-html` supports all your virtual DOM needs
+
+- - -
+
+## Wow it has composition too
+
+```elm
+import Html exposing (Html, h2, text)
+import String
+
+
+exclaim : String -> String
+exclaim string =
+   string ++ "!"
+
+
+view : List String -> Html
+view =
+  let
+    heading string =
+      h2 [] [ text string ]
+  in
+    heading << String.join " " << List.map exclaim
+
+
+main : Html
+main =
+  view ["Hello", "Darkness", "My",  "Old", "Friend"]
+```
+
+* * *
