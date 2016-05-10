@@ -97,7 +97,7 @@ Literally.
 ## The 2016 Front-End Developer Toolkit
 
 | JavaScript    | Elm        |
-|----------------------------|
+| ------------- | ---------- |
 | Babel         | Elm        |
 | Redux         | Elm        |
 | Flow          | Elm        |
