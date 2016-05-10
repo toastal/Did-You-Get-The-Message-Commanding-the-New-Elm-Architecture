@@ -101,7 +101,7 @@ Literally.
 | Babel         | Elm (compiler)        |
 | Redux         | Elm (design pattern)  |
 | Flow          | Elm (type annotation) |
-| Ramda, Lodash | Elm (stlib)           |
+| Ramda, Lodash | Elm (stdlib)          |
 | React         | elm-html\*            |
 | ESLint        | elm-format            |
 | Mocha, et.al  | elm-test              |
