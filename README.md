@@ -1,5 +1,5 @@
-# Subscriptions-based Programming
-### Reactive-Programming-at-the-Language-Level
+# Did You Get The Message?
+### Commanding the New Elm Architecture
 
 
 * * *
@@ -7,7 +7,7 @@
 
 ## What is Elm?
 
-Elm is a ~~functional reactive programming~~ subscription-based, function language built from the ground up to a be the best language for making UIs.
+Elm is a ~~functional reactive programming~~ command-and-subscribe-based, functional language built from the ground up to a be the best language for making UIs.
 
 But before we go more into that...
 
@@ -101,7 +101,7 @@ Literally.
 | Babel         | Elm (compiler)        |
 | Redux         | Elm (design pattern)  |
 | Flow          | Elm (type annotation) |
-| Ramda, Lodash | Elm (stlib)           |
+| Ramda, Lodash | Elm (stdlib)          |
 | React         | elm-html\*            |
 | ESLint        | elm-format            |
 | Mocha, et.al  | elm-test              |
@@ -120,7 +120,7 @@ Literally.
 
 ## Babel
 
-`elm-make` compiles to ECMAScript 5
+`elm-make` compiles to ECMAScript 5 so it's compatible with all the things you care about.
 
 
 * * *
@@ -128,7 +128,7 @@ Literally.
 
 ## Flow
 
-Elm's a strong statically-typed language with type inference
+Elm's a strong statically-typed language with type inference.
 
 
 - - -
