@@ -143,7 +143,6 @@ exclaim : String -> String
 exclaim string =
    string ++ "!"
 
-
 view : String -> Html String
 view string =
   text (exclaim string)
@@ -205,12 +204,12 @@ main =
 ```elm
 -- Model aka State
 
--- Reducer
-update : Msg -> Model -> Model
-
 -- View aka stateless component
 -- Sends commands (dispatches actions)
 view : Model -> Html Msg
+
+-- Reducer
+update : Msg -> Model -> Model
 ```
 
 
@@ -256,8 +255,7 @@ init =
 
 
 type Msg
-  = NoOp
-  | Reverse String
+  = Reverse String
   | Shout String
 
 
@@ -279,7 +277,7 @@ view { reverse, shout } =
   div []
     [ input [ placeholder "Reverse me", onInput Reverse ] []
     , div [] [ text <| String.reverse reverse ]
-    , input [ placeholder "Shout me", onInput Shout] []
+    , input [ placeholder "Shout me", onInput Shout ] []
     , div [] [ text <| String.toUpper shout ]
     ]
 
