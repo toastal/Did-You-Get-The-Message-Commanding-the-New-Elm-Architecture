@@ -1,4 +1,4 @@
-# Gordon, the Elm Signal
+# Subscriptions-based Programming
 ### Reactive-Programming-at-the-Language-Level
 
 
@@ -7,7 +7,7 @@
 
 ## What is Elm?
 
-Elm is a functional reactive programming language built from the ground up to a be a language for making UIs.
+Elm is a ~~functional reactive programming~~ subscription-based, function language built from the ground up to a be the best language for making UIs.
 
 But before we go more into that...
 
@@ -137,7 +137,7 @@ Elm's a strong statically-typed language with type inference
 ### This fails
 
 ```elm
-import Graphics.Element exposing (Element, show)
+import Html exposing (Html, text)
 
 
 exclaim : String -> String
@@ -145,14 +145,14 @@ exclaim string =
    string ++ "!"
 
 
-view : String -> Element
-view =
-  exclaim >> show
+view : String -> Html String
+view string =
+  text (exclaim string)
 
 
-main : Element
+main : Html String
 main =
-  view 1
+  view 42
 ```
 
 
@@ -165,7 +165,11 @@ The core library has utility functions for Lists, Arrays, Sets, Dictionaries, St
 
 `elm-html` supports all your virtual DOM needs
 
+*Note: doesn't support higher-kinded polymorphism*
+
+
 - - -
+
 
 ## Wow it has composition too
 
@@ -194,3 +198,102 @@ main =
 ```
 
 * * *
+
+
+## What if Redux was only a design pattern instead of a whole library?
+
+
+- - -
+
+
+## The (New) Elm Architecture
+
+```elm
+-- Model aka State
+
+-- Reducer
+update : Msg -> Model -> Model
+
+-- View aka stateless component
+-- Sends commands (dispatches actions)
+view : Model -> Html Msg
+```
+
+
+* * *
+
+
+## Live coding???
+
+string reverser + string shouter
+
+```elm
+import Html exposing (Html, Attribute, div, input, text)
+import Html.App as Html
+import Html.Attributes exposing (..)
+import Html.Events exposing (onInput)
+import String
+```
+
+
+- - -
+
+
+## The cheat (in case I stumble)
+
+```elm
+import Html exposing (Html, Attribute, div, input, text)
+import Html.App as Html
+import Html.Attributes exposing (..)
+import Html.Events exposing (onInput)
+import String
+
+
+type alias Model =
+ { reverse : String
+ , shout : String
+ }
+
+
+init =
+  { reverse = ""
+  , shout = ""
+  }
+
+
+type Msg
+  = NoOp
+  | Reverse String
+  | Shout String
+
+
+update : Msg -> Model -> Model
+update msg model =
+  case msg of
+    Reverse val ->
+      { model | reverse = val }
+
+    Shout val ->
+      { model | shout = val }
+
+    _ ->
+      model
+
+
+view : Model -> Html Msg
+view { reverse, shout } =
+  div []
+    [ input [ placeholder "Reverse me", onInput Reverse ] []
+    , div [] [ text <| String.reverse reverse ]
+    , input [ placeholder "Shout me", onInput Shout] []
+    , div [] [ text <| String.toUpper shout ]
+    ]
+
+
+main =
+  Html.beginnerProgram
+    { model = init
+    , update = update
+    , view = view
+    }
+```
