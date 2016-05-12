@@ -203,12 +203,15 @@ main =
 
 ```elm
 -- Model aka State
+init : Model
 
 -- View aka stateless component
 -- Sends commands (dispatches actions)
 view : Model -> Html Msg
 
--- Reducer
+-- update aka Reducer
+-- combines the message and the current model to create
+-- a new model for the state
 update : Msg -> Model -> Model
 ```
 
