@@ -102,7 +102,7 @@ Literally.
 | Redux         | Elm *(design pattern)*  |
 | Flow          | Elm *(type annotation)* |
 | Ramda, Lodash | Elm *(stdlib)*          |
-| React         | elm-html\*              |
+| React         | html\*                  |
 | ESLint        | elm-format              |
 | Mocha, et.al  | elm-test                |
 
@@ -134,7 +134,7 @@ Elm's a strong statically-typed language with type inference.
 - - -
 
 
-### This fails
+### This fails (so do other things)
 
 ```elm
 import Html exposing (Html, text)
