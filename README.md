@@ -74,7 +74,7 @@ A story of stores... state belongs outside the components, data flows one way
 
 - Single state atom
 - Encourages you not to use local state (ignore most parts of React)
-- Query stores, not state
+- Query stores, never component state
 
 
 * * *
