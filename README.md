@@ -209,8 +209,8 @@ init : Model
 -- Sends commands (dispatches actions)
 view : Model -> Html Msg
 
--- update aka Reducer
--- combines the message and the current model to create
+-- Update aka Reducer
+-- combines the message (action) and the current model to create
 -- a new model for the state
 update : Msg -> Model -> Model
 ```
