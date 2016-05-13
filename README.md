@@ -165,7 +165,7 @@ main =
 
 ## <img alt="Immutable" title="Immutable" src="images/immutable-logo.svg" style="height:1em;vertical-align:middle;border:0;box-shadow:none"> / <img alt="Ramda" title="Ramda" src="images/ramda-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none"> / <img alt="Lodash" title="Lodash" src="images/lodash-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none"> & Stateless Components
 
-The core library has utility functions for Lists, Arrays, Sets, Dictionaries, Strings, Signals, Maybes...
+The core library has utility functions for Lists, Arrays, Sets, Dictionaries, Strings, Maybes...
 
 `elm-html` supports all your virtual DOM needs
 
