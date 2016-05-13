@@ -9,7 +9,7 @@
 
 ## What is Elm?
 
-Elm is a ~~functional reactive programming~~ command-and-subscribe-based, functional language built from the ground up to a be the best language for making UIs.
+Elm is a ~~functional reactive programming~~ concurent functional programming language built from the ground up to a be the best language for building UIs.
 
 But before we go more into that...
 
