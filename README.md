@@ -267,6 +267,7 @@ type alias Model =
  }
 
 
+init : Model
 init =
   { reverse = ""
   , shout = ""
