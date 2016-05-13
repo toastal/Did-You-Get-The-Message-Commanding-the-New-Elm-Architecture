@@ -183,18 +183,18 @@ import String
 
 exclaim : String -> String
 exclaim string =
-string ++ "!"
+  string ++ "!"
 
 view : List String -> Html
 view =
-let
-heading string = h2 [] [ text string ]
-in
-heading << String.join " " << List.map exclaim
+  let
+    heading string = h2 [] [ text string ]
+  in
+    heading << String.join " " << List.map exclaim
 
 main : Html
 main =
-view ["Hello", "Darkness", "My",  "Old", "Friend"]
+  view ["Hello", "Darkness", "My",  "Old", "Friend"]
 ```
 
 
