@@ -281,14 +281,11 @@ type Msg
 update : Msg -> Model -> Model
 update msg model =
   case msg of
-    Reverse val ->
-      { model | reverse = val }
+    Reverse str ->
+      { model | reverse = str }
 
-    Shout val ->
-      { model | shout = val }
-
-    _ ->
-      model
+    Shout str ->
+      { model | shout = str }
 
 
 view : Model -> Html Msg
