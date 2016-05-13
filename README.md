@@ -237,6 +237,14 @@ import Html.App as Html
 import Html.Attributes exposing (..)
 import Html.Events exposing (onInput)
 import String
+
+
+main =
+  Html.beginnerProgram
+    { model = init
+    , update = update
+    , view = view
+    }
 ```
 
 
