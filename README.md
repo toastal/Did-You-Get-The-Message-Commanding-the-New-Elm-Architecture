@@ -1,5 +1,7 @@
-# Did You Get The Message?
+## Did You Get The Message?
 ### Commanding the New Elm Architecture
+
+<img alt="Elm" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
 
 
 * * *
@@ -21,14 +23,16 @@ But before we go more into that...
 * * *
 
 
-## jQuery
+<h2><img alt="jQuery" title="jQuery" src="images/jquery-logo.svg" style="height:15vh;vertical-align:middle;border:0;box-shadow:none"></h2>
 
 For better or worse, it changed the game.
 
 
 - - -
 
-## What Failed and Why Did We Move On
+
+## What failed
+### & why did we move on
 
 - State was stored in the DOM
 - To get state, we'd requery that DOM
@@ -41,7 +45,7 @@ For better or worse, it changed the game.
 * * *
 
 
-## React's `setState`
+## <img alt="React" title="React" src="images/react-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none">'s `setState`
 
 React's built-in state management... state no longer tied to the DOM
 
@@ -49,7 +53,8 @@ React's built-in state management... state no longer tied to the DOM
 - - -
 
 
-## What Failed and Why Did We Move On
+## What failed
+### & why did we move on
 
 - Somewhat controlled, but ultimately imperative and mutative API
 - Like jQuery, the data is tied to the 'element'
@@ -62,7 +67,7 @@ React's built-in state management... state no longer tied to the DOM
 * * *
 
 
-## Myriad of Flux Libraries
+## Myriad of <img alt="Flux" title="Flux" src="images/flux-logo.svg" style="height:1.8em;vertical-align:middle;border:0;box-shadow:none"> Libraries
 
 A story of stores... state belongs outside the components, data flows one way
 
@@ -80,11 +85,13 @@ A story of stores... state belongs outside the components, data flows one way
 * * *
 
 
-## Where did Redux get its inspiration?
+## Where did <img alt="Redux" title="Redux" src="images/redux-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none"> get its inspiration?
 
 
 * * *
 
+
+<img alt="Elm" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
 
 ## The Elm Architecture
 
@@ -94,17 +101,17 @@ Literally.
 * * *
 
 
-## The 2016 Front-End Developer Toolkit
+### The 2016 Front-End Developer Toolkit
 
-| JavaScript    | Elm                     |
-| ------------- | ----------------------- |
-| Babel         | Elm *(compiler)*        |
-| Redux         | Elm *(design pattern)*  |
-| Flow          | Elm *(type annotation)* |
-| Ramda, Lodash | Elm *(stdlib)*          |
-| React         | html\*                  |
-| ESLint        | elm-format              |
-| Mocha, et.al  | elm-test                |
+| JavaScript               | Elm                     |
+| ------------------------ | ----------------------- |
+| Babel                    | Elm *(compiler)*        |
+| Redux                    | Elm *(design pattern)*  |
+| Flow                     | Elm *(type annotation)* |
+| Immutable, Ramda, Lodash | Elm *(stdlib)*          |
+| React                    | html\*                  |
+| ESLint                   | elm-format              |
+| Mocha, Chai, et.al.      | elm-test                |
 
 \* For rendering stateless components only
 
@@ -112,13 +119,13 @@ Literally.
 * * *
 
 
-![That important meme image]
+<img alt="Meme: The 2016 Front-End Leet Toolkit vs. Elm" src="images/elm-vs-front-end.png" style="height:80vh;border:0">
 
 
 * * *
 
 
-## Babel
+## <img alt="Babel" title="Babel" src="images/babel-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
 
 `elm-make` compiles to ECMAScript 5 so it's compatible with all the things you care about.
 
@@ -126,7 +133,7 @@ Literally.
 * * *
 
 
-## Flow
+## <img alt="Flow" title="Flow" src="images/flow-logo.png" style="height:17vh;vertical-align:middle;border:0;box-shadow:none">
 
 Elm's a strong statically-typed language with type inference.
 
@@ -156,7 +163,7 @@ main =
 * * *
 
 
-## Ramda / Lodash & Stateless Components
+## <img alt="Immutable" title="Immutable" src="images/immutable-logo.svg" style="height:1em;vertical-align:middle;border:0;box-shadow:none"> / <img alt="Ramda" title="Ramda" src="images/ramda-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none"> / <img alt="Lodash" title="Lodash" src="images/lodash-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none"> & Stateless Components
 
 The core library has utility functions for Lists, Arrays, Sets, Dictionaries, Strings, Signals, Maybes...
 
@@ -176,30 +183,31 @@ import String
 
 exclaim : String -> String
 exclaim string =
-   string ++ "!"
+string ++ "!"
 
 view : List String -> Html
 view =
-  let
-    heading string = h2 [] [ text string ]
-  in
-    heading << String.join " " << List.map exclaim
+let
+heading string = h2 [] [ text string ]
+in
+heading << String.join " " << List.map exclaim
 
 main : Html
 main =
-  view ["Hello", "Darkness", "My",  "Old", "Friend"]
+view ["Hello", "Darkness", "My",  "Old", "Friend"]
 ```
+
 
 * * *
 
 
-## What if Redux was only a design pattern instead of a whole library?
+## What if <img alt="Redux" title="Redux" src="images/redux-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none"> was only a design pattern instead of a whole library?
 
 
 - - -
 
 
-## The (New) Elm Architecture
+## The (New) <img alt="Elm" title="Elm" src="images/elm-logo.svg" style="height:0.9em;vertical-align:middle;border:0;box-shadow:none"> Architecture
 
 ```elm
 -- Model aka State
@@ -219,7 +227,7 @@ update : Msg -> Model -> Model
 * * *
 
 
-## Live coding???
+## Live <img alt="Elm" title="Elm" src="images/elm-logo.svg" style="height:0.9em;vertical-align:middle;border:0;box-shadow:none"> coding???
 
 string reverser + string shouter
 
