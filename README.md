@@ -1,7 +1,7 @@
 ## Did You Get The Message?
 ### Commanding the New Elm Architecture
 
-<img alt="Elm" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
+<img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
 
 
 * * *
@@ -77,10 +77,10 @@ A story of stores... state belongs outside the components, data flows one way
 
 ## The real winner here was Redux
 
-- Single state atom
-- Encourages you not to use local state (ignore most parts of React)
+- Encourages you not to use local state
+- ...Ignoring most parts of React and using React just to render stateless components
 - Query stores, never component state
-
+- Single state atom
 
 * * *
 
@@ -91,7 +91,7 @@ A story of stores... state belongs outside the components, data flows one way
 * * *
 
 
-<img alt="Elm" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
+<img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
 
 ## The Elm Architecture
 
