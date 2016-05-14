@@ -3,6 +3,8 @@
 
 <a href="http://elm-lang.org/"><img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none"></a>
 
+Kyle J. Kress - @toastal
+
 
 * * *
 
