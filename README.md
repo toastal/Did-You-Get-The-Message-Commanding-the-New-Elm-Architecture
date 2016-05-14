@@ -1,7 +1,7 @@
 ## Did You Get The Message?
 ### Commanding the New Elm Architecture
 
-<img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
+<a href="http://elm-lang.org/"><img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none"></a>
 
 
 * * *
@@ -220,6 +220,7 @@ view : Model -> Html Msg
 -- Update aka Reducer
 -- combines the message (action) and the current model to create
 -- a new model for the state
+-- Uses unions types and pattern matching
 update : Msg -> Model -> Model
 ```
 
@@ -306,3 +307,24 @@ main =
     , view = view
     }
 ```
+
+
+* * *
+
+
+## Going deeper
+
+- Effects: Commands, Subscriptions (Random # Gen., HTTP/REST, Time, Animation, Web Sockets)
+- Nested Components
+- Ports
+- Results: Error Handling
+
+[Read the guide](http://guide.elm-lang.org/)
+
+
+* * *
+
+
+## Thanks.
+
+Follow me on Twitter @toastal
