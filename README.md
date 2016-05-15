@@ -295,9 +295,9 @@ update msg model =
 view : Model -> Html Msg
 view { reverse, shout } =
   div []
-    [ input [ placeholder "Reverse me", onInput Reverse ] []
+    [ input [ placeholder "Reverse me", value reverse, onInput Reverse ] []
     , div [] [ text <| String.reverse reverse ]
-    , input [ placeholder "Shout me", onInput Shout ] []
+    , input [ placeholder "Shout me", value shout, onInput Shout ] []
     , div [] [ text <| String.toUpper shout ]
     ]
 
