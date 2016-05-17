@@ -314,6 +314,31 @@ main =
 * * *
 
 
+## But how easy is it to get <img alt="Elm" title="Elm" src="images/elm-logo.svg" style="height:0.9em;vertical-align:middle;border:0;box-shadow:none"> into an existing app?
+
+
+- - -
+
+
+### From the docs.
+
+```bash
+elm make src/MyThing.elm --output=my-thing.js
+```
+
+```js
+var Elm = {};
+Elm.MyThing = {
+    fullscreen: function() { /* take over the <body> */ },
+    embed: function(node) { /* take over the given node */ },
+    worker: function() { /* run the program with no UI */ }
+};
+```
+
+
+* * *
+
+
 ## Going deeper
 
 - Effects: Commands, Subscriptions (Random # Gen., HTTP/REST, Time, Animation, Web Sockets)
@@ -329,4 +354,4 @@ main =
 
 ## Thanks.
 
-Follow me on Twitter @toastal
+You can follow me on Twitter @toastal
