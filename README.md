@@ -327,7 +327,7 @@ elm make src/MyThing.elm --output=my-thing.js
 ```
 
 ```js
-var Elm = {};
+var Elm = Elm || {};
 Elm.MyThing = {
     fullscreen: function() { /* take over the <body> */ },
     embed: function(node) { /* take over the given node */ },
