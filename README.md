@@ -200,6 +200,23 @@ main =
 ```
 
 
+- - -
+
+
+## Equality checks? Ha.
+
+```elm
+import Html exposing (text)
+
+listA : List Int
+listA =
+  [1, 2, 3]
+
+main =
+  text << toString <| [1, 2, 3] == listA
+```
+
+
 * * *
 
 
@@ -339,7 +356,7 @@ Elm.MyThing = {
 * * *
 
 
-## Benchmark (Non-Elm Version out of date)
+## [Benchmark](https://lorenzo.github.io/todomvc-perf-comparison/) (Non-Elm Version out of date)
 
 <img alt="Elm benchmark" src="images/benchmark.png" style="height:70vh;width:auto;vertical-align:middle;border:0;box-shadow:none">
 
