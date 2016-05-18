@@ -208,12 +208,12 @@ main =
 ```elm
 import Html exposing (text)
 
-listA : List Int
+listA : List (List Int)
 listA =
-  [1, 2, 3]
+  [[1, 2], [3, 4, 5]]
 
 main =
-  text << toString <| [1, 2, 3] == listA
+  text << toString <| [[1, 2], [3, 4, 5]] == listA
 ```
 
 
