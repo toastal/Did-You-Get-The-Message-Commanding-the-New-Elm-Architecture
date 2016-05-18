@@ -339,6 +339,14 @@ Elm.MyThing = {
 * * *
 
 
+## Benchmark (Non-Elm Version out of date)
+
+<img alt="Elm benchmark" src="images/benchmark.png" style="height:70vh;width:auto;vertical-align:middle;border:0;box-shadow:none">
+
+
+* * *
+
+
 ## Going deeper
 
 - Effects: Commands, Subscriptions (Random # Gen., HTTP/REST, Time, Animation, Web Sockets)
