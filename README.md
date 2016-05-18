@@ -1,5 +1,6 @@
 ## Did You Get The Message?
 ### Commanding the New Elm Architecture
+#### And How Elm Can Help Solve Your Library Overload Problem
 
 <a href="http://elm-lang.org/"><img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none"></a>
 
@@ -11,7 +12,7 @@ Kyle J. Kress - @toastal
 
 ## What is Elm?
 
-Elm is a ~~functional reactive programming~~ concurent functional programming language built from the ground up to a be the best language for building UIs.
+Elm is a ~~functional reactive programming language~~ concurrent functional programming language built from the ground up to a be the best language for building UIs.
 
 But before we go more into that...
 
@@ -71,7 +72,7 @@ React's built-in state management... state no longer tied to the DOM
 
 ## Myriad of <img alt="Flux" title="Flux" src="images/flux-logo.svg" style="height:1.8em;vertical-align:middle;border:0;box-shadow:none"> Libraries
 
-A story of stores... state belongs outside the components, data flows one way
+A story of stores... data flows one way
 
 
 - - -
@@ -81,8 +82,8 @@ A story of stores... state belongs outside the components, data flows one way
 
 - Encourages you not to use local state
 - ...Ignoring most parts of React and using React just to render stateless components
+- Single state atom (the `store`)
 - Query stores, never component state
-- Single state atom
 
 * * *
 
@@ -356,7 +357,7 @@ Elm.MyThing = {
 * * *
 
 
-## [Benchmark](https://lorenzo.github.io/todomvc-perf-comparison/) (Non-Elm Version out of date)
+### [Benchmark](https://lorenzo.github.io/todomvc-perf-comparison/) (some libraries out of date)
 
 <img alt="Elm benchmark" src="images/benchmark.png" style="height:70vh;width:auto;vertical-align:middle;border:0;box-shadow:none">
 
