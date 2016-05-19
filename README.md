@@ -338,14 +338,31 @@ main =
 - - -
 
 
-### From the docs.
+##### Run from command line
 
 ```bash
 elm make src/MyThing.elm --output=my-thing.js
 ```
 
+
+##### Source the script in your HTML
+
+```html
+<script type="application/javascript" src="/static/my-thing.js"></script>
+```
+
+
+##### Or import it with whatever in JavaScript
+
 ```js
-var Elm = Elm || {};
+import {Elm} from "my-thing"
+```
+
+
+##### Go to town!
+
+```js
+// var Elm = Elm || {};
 Elm.MyThing = {
     fullscreen: function() { /* take over the <body> */ },
     embed: function(node) { /* take over the given node */ },
