@@ -214,7 +214,9 @@ listA =
   [[1, 2], [3, 4, 5]]
 
 main =
-  text << toString <| [[1, 2], [3, 4, 5]] == listA
+  [[1, 2], [3, 4, 5]] == listA
+    |> toString
+    |> text
 ```
 
 
