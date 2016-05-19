@@ -4,7 +4,7 @@
 
 <a href="http://elm-lang.org/"><img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none"></a>
 
-Kyle J. Kress - @toastal
+Kyle J. Kress — @toastal
 
 
 * * *
@@ -14,7 +14,7 @@ Kyle J. Kress - @toastal
 
 Elm is a ~~functional reactive programming language~~ concurrent functional programming language built from the ground up to a be the best language for building UIs.
 
-But before we go more into that...
+But before we go more into that…
 
 
 * * *
@@ -38,19 +38,19 @@ For better or worse, it changed the game.
 ### & why did we move on
 
 - State was stored in the DOM
-- To get state, we'd requery that DOM
+- To get state, we’d requery that DOM
 - Querying the DOM is slow
 - State had to be stored in the DOM
-- Or we'd call an API to get brand new DOM
+- Or we’d call an API to get brand new DOM
 - No single source of truth
 
 
 * * *
 
 
-## <img alt="React" title="React" src="images/react-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none">'s `setState`
+## <img alt="React" title="React" src="images/react-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none">’s `setState`
 
-React's built-in state management... state no longer tied to the DOM
+React’s built-in state management… state no longer tied to the DOM
 
 
 - - -
@@ -60,8 +60,8 @@ React's built-in state management... state no longer tied to the DOM
 ### & why did we move on
 
 - Somewhat controlled, but ultimately imperative and mutative API
-- Like jQuery, the data is tied to the 'element'
-- Component 'owning' data isn't so cool
+- Like jQuery, the data is tied to the ‘element’
+- Component ‘owning’ data isn’t so cool
 - Performance cost of not using pure render
 - Passing around state/props to components is a bear
 - No single source of truth
@@ -72,7 +72,7 @@ React's built-in state management... state no longer tied to the DOM
 
 ## Myriad of <img alt="Flux" title="Flux" src="images/flux-logo.svg" style="height:1.8em;vertical-align:middle;border:0;box-shadow:none"> Libraries
 
-A story of stores... data flows one way
+A story of stores… data flows one way
 
 
 - - -
@@ -81,7 +81,7 @@ A story of stores... data flows one way
 ## The real winner here was Redux
 
 - Encourages you not to use local state
-- ...Ignoring most parts of React and using React just to render stateless components
+- …Ignoring most parts of React and using React just to render stateless components
 - Single state atom (the `store`)
 - Query stores, never component state
 
@@ -130,7 +130,7 @@ Literally.
 
 ## <img alt="Babel" title="Babel" src="images/babel-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
 
-`elm-make` compiles to ECMAScript 5 so it's compatible with all the things you care about.
+`elm-make` compiles to ECMAScript 5 so it’s compatible with all the things you care about.
 
 
 * * *
@@ -168,7 +168,9 @@ main =
 
 ## <img alt="Immutable" title="Immutable" src="images/immutable-logo.svg" style="height:1em;vertical-align:middle;border:0;box-shadow:none"> / <img alt="Ramda" title="Ramda" src="images/ramda-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none"> / <img alt="Lodash" title="Lodash" src="images/lodash-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none"> & Stateless Components
 
-The core library has utility functions for Lists, Arrays, Sets, Dictionaries, Strings, Maybes...
+The core library has utility functions for Lists, Arrays, Sets, Dictionaries, Strings, Maybes…
+
+With `Maybe` we never have to worry about `null` or `undefined`.
 
 `elm-html` supports all your virtual DOM needs
 
@@ -398,25 +400,25 @@ import {Elm} from "my-thing"
 
 
 # Sorry, React
-## It's not that you're a bad framework...
+## It’s not that you're a bad framework…
 
 
 - - -
 
 
-## ...Some of our best times have been with you...
+## …Some of our best times have been with you…
 
 
 - - -
 
 
-## ...You've taught us a lot about who we are and who we want to be
+## …You’ve taught us a lot about who we are and who we want to be…
 
 
 - - -
 
 
-## ...But we've looked around & we know we can do better.
+## …But we’ve looked around & we know we can do better.
 
 <a href="http://elm-lang.org/"><img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none"></a>
 
@@ -424,6 +426,8 @@ import {Elm} from "my-thing"
 * * *
 
 
-## Thanks.
+## It’s been real.
 
-You can follow me on Twitter @toastal
+# Thanks.
+
+You can follow me on Twitter `@toastal`
