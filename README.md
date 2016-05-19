@@ -116,7 +116,7 @@ Literally.
 | ESLint                   | elm-format              |
 | Mocha, Chai, et.al.      | elm-test                |
 
-\* For rendering stateless components only
+\* For rendering virtual DOM (i.e. stateless components) only
 
 
 * * *
@@ -236,7 +236,7 @@ main =
 init : Model
 
 -- View aka stateless component
--- Sends commands (dispatches actions)
+-- Sends messages (dispatches actions)
 view : Model -> Html Msg
 
 -- Update aka Reducer
@@ -347,6 +347,18 @@ elm make src/MyThing.elm --output=my-thing.js
 ```
 
 
+##### Something like this is created
+
+```js
+var Elm = Elm || {};
+Elm.MyThing = {
+    embed: function(node) { /* take over the given node */ },
+    fullscreen: function() { /* take over the <body> */ },
+    worker: function() { /* run the program with no UI (NOT a Web Worker) */ }
+};
+```
+
+
 ##### Source the script in your HTML
 
 ```html
@@ -358,18 +370,6 @@ elm make src/MyThing.elm --output=my-thing.js
 
 ```js
 import {Elm} from "my-thing"
-```
-
-
-##### Go to town!
-
-```js
-// var Elm = Elm || {};
-Elm.MyThing = {
-    fullscreen: function() { /* take over the <body> */ },
-    embed: function(node) { /* take over the given node */ },
-    worker: function() { /* run the program with no UI */ }
-};
 ```
 
 
@@ -392,6 +392,33 @@ Elm.MyThing = {
 - Results: Error Handling
 
 [Read the guide](http://guide.elm-lang.org/)
+
+
+* * *
+
+
+# Sorry, React
+## It's not that you're a bad framework...
+
+
+- - -
+
+
+## ...Some of our best times have been with you...
+
+
+- - -
+
+
+## ...You've taught us a lot about who we are and who we want to be
+
+
+- - -
+
+
+## ...But we've looked around & we know we can do better.
+
+<a href="http://elm-lang.org/"><img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none"></a>
 
 
 * * *
