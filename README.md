@@ -1,5 +1,5 @@
 ## Did You Get The Message?
-### Commanding the New Elm Architecture
+### Commanding the Elm Architecture
 #### And How Elm Can Help Solve Your Library Overload Problem
 
 <a href="http://elm-lang.org/"><img alt="Elm logo" title="Elm" src="images/elm-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none"></a>
@@ -151,15 +151,15 @@ import Html exposing (Html, text)
 
 exclaim : String -> String
 exclaim string =
-   string ++ "!"
+    string ++ "!"
 
 view : String -> Html String
 view string =
-  text (exclaim string)
+    text (exclaim string)
 
 main : Html String
 main =
-  view 42
+    view 42
 ```
 
 
@@ -188,18 +188,18 @@ import String
 
 exclaim : String -> String
 exclaim string =
-  string ++ "!"
+    string ++ "!"
 
 view : List String -> Html
 view =
-  let
-    heading string = h2 [] [ text string ]
-  in
-    heading << String.join " " << List.map exclaim
+    let
+        heading string = h2 [] [ text string ]
+    in
+        heading << String.join " " << List.map exclaim
 
 main : Html
 main =
-  view ["Hello", "Darkness", "My",  "Old", "Friend"]
+    view ["Hello", "Darkness", "My",  "Old", "Friend"]
 ```
 
 
@@ -213,12 +213,12 @@ import Html exposing (text)
 
 listA : List (List Int)
 listA =
-  [[1, 2], [3, 4, 5]]
+    [[1, 2], [3, 4, 5]]
 
 main =
-  [[1, 2], [3, 4, 5]] == listA
-    |> toString
-    |> text
+    [[1, 2], [3, 4, 5]] == listA
+        |> toString
+        |> text
 ```
 
 
