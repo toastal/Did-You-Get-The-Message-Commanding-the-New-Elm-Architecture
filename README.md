@@ -128,6 +128,123 @@ Literally.
 * * *
 
 
+# Elm Syntax Fly By
+
+
+- - -
+
+
+```elm
+-- Comment
+{- Block comment
+-}
+True: Bool
+32 : number  -- Int or Floatable
+2.11 : Float
+'x' : Char
+"xyz" : String
+"""
+Multiline strings
+"""
+```
+
+- - -
+
+## Lists
+
+```elm
+[1..5]
+[1, 2, 3]
+1 :: [2, 3]
+```
+ 
+- - -
+
+
+```elm
+toMoney : Float -> String
+toMoney tbDollaz =
+    "$" ++ toString tbDollaz
+-- toMoney 3.14
+--=> "$3.14"
+```
+
+```js
+const toMoney = (tbDollaz) => 
+  "$" + tbDollaz
+// toMoney(3.14)
+//=> "$3.14"
+```
+
+Note the type signature and JS's implicit type coercion
+
+
+- - -
+
+
+## Case
+
+```elm
+-- maybe : Maybe Int
+case maybe of
+    Just x ->
+        x
+    Nothing ->
+        0
+
+-- recursive list length
+length : List a -> Int
+length list =
+  case list of
+    [] ->
+        0
+    head :: tail ->
+        1 + length tail
+```
+
+
+- - -
+
+
+## Union Types
+
+```elm
+type Team
+    = Mystic
+    | Instinct
+    | Valor
+    
+type Food
+    = Vegetable String
+    | Fruit String
+    | Meat String
+    | Grain String
+    | Dairy String
+    | NotSureIfFood
+```
+
+- - -
+
+
+## Record + Type Alias
+
+```elm
+type alias Point =
+    { x : Int
+    , y : Int
+    }
+    
+p : Point
+p = { x = 0, y = 1 }
+
+p' = { p | x = 2 }
+-- { x = 2, y = 1 }
+```
+
+
+* * *
+
+
 ## <img alt="Babel" title="Babel" src="images/babel-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
 
 `elm-make` compiles to ECMAScript 5 so it’s compatible with all the things you care about.
