@@ -134,6 +134,8 @@ Literally.
 - - -
 
 
+### Literals
+
 ```elm
 -- Comment
 {- Block comment
@@ -150,16 +152,19 @@ Multiline strings
 
 - - -
 
-## Lists
+### Lists
 
 ```elm
 [1..5]
 [1, 2, 3]
 1 :: [2, 3]
 ```
- 
+
+
 - - -
 
+
+### Functions
 
 ```elm
 toMoney : Float -> String
@@ -170,43 +175,46 @@ toMoney tbDollaz =
 ```
 
 ```js
-const toMoney = (tbDollaz) => 
-  "$" + tbDollaz
+function toMoney(tbDollaz) {
+  return "$" + tbDollaz
+}
 // toMoney(3.14)
 //=> "$3.14"
 ```
 
-Note the type signature and JS's implicit type coercion
+Note the type signature, implicit return, & JS's implicit type coercion
 
 
 - - -
 
 
-## Case
+### Case (works like `switch` + more)
 
 ```elm
 -- maybe : Maybe Int
 case maybe of
     Just x ->
         x
+
     Nothing ->
         0
 
 -- recursive list length
 length : List a -> Int
 length list =
-  case list of
-    [] ->
-        0
-    head :: tail ->
-        1 + length tail
+    case list of
+        [] ->
+            0
+
+        head :: tail ->
+            1 + length tail
 ```
 
 
 - - -
 
 
-## Union Types
+### Union Types (Tagged Union, Enum)
 
 ```elm
 type Team
@@ -226,18 +234,21 @@ type Food
 - - -
 
 
-## Record + Type Alias
+### Record + Type Alias
 
 ```elm
 type alias Point =
     { x : Int
     , y : Int
     }
-    
-p : Point
-p = { x = 0, y = 1 }
 
-p' = { p | x = 2 }
+p : Point
+p =
+    { x = 0, y = 1 }
+
+p' : Point
+p' =
+    { p | x = 2 }
 -- { x = 2, y = 1 }
 ```
 
