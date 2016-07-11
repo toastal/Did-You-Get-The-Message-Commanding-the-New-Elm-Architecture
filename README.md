@@ -60,9 +60,9 @@ React’s built-in state management… state no longer tied to the DOM
 ### & why did we move on
 
 - Somewhat controlled, but ultimately imperative and mutative API
+- Performance cost of not using pure render
 - Like jQuery, the data is tied to the ‘element’
 - Component ‘owning’ data isn’t so cool
-- Performance cost of not using pure render
 - Passing around state/props to components is a bear
 - No single source of truth
 
@@ -112,7 +112,7 @@ Literally.
 | Redux                    | Elm *(design pattern)*  |
 | Flow                     | Elm *(type annotation)* |
 | Immutable, Ramda, Lodash | Elm *(stdlib)*          |
-| React                    | html\*                  |
+| React\*                  | html\*                  |
 | ESLint                   | elm-format              |
 | Mocha, Chai, et.al.      | elm-test                |
 
@@ -140,14 +140,14 @@ Literally.
 -- Comment
 {- Block comment
 -}
-True: Bool
-32 : number  -- Int or Floatable
-2.11 : Float
-'x' : Char
+True  : Bool
+32    : number  -- Int or Floatable
+2.11  : Float
+'x'   : Char
 "xyz" : String
 """
 Multiline strings
-"""
+"""   : String
 ```
 
 - - -
@@ -187,6 +187,29 @@ Note the type signature, implicit return, & JS's implicit type coercion
 
 - - -
 
+### Union Types (Tagged Union, Enum)
+
+```elm
+type Team
+    = Mystic
+    | Instinct
+    | Valor
+    
+type Food
+    = Vegetable String
+    | Fruit String
+    | Meat String
+    | Grain String
+    | Dairy String
+    | NotSureIfFood
+    
+type Maybe a
+    = Just a
+    | Nothing
+```
+
+- - -
+
 
 ### Case (works like `switch` + more)
 
@@ -208,27 +231,6 @@ length list =
 
         head :: tail ->
             1 + length tail
-```
-
-
-- - -
-
-
-### Union Types (Tagged Union, Enum)
-
-```elm
-type Team
-    = Mystic
-    | Instinct
-    | Valor
-    
-type Food
-    = Vegetable String
-    | Fruit String
-    | Meat String
-    | Grain String
-    | Dairy String
-    | NotSureIfFood
 ```
 
 - - -
