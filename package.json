@@ -1,0 +1,26 @@
+{
+  "name": "did-you-get-the-message",
+  "version": "1.0.0",
+  "description": "<a href=\"http://elm-lang.org/\"><img alt=\"Elm logo\" title=\"Elm\" src=\"images/elm-logo.svg\" style=\"height:16vh;vertical-align:middle;border:0;box-shadow:none\"></a>",
+  "main": "index.js",
+  "dependencies": {
+    "elm": "^0.17.1",
+    "reveal-md": "0.0.30"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "postinstall": "elm package install -y",
+    "start": "reveal-md slides.md --theme 'simple' --highlightTheme 'arduino-light' --separator '^\\n\\*\\s*\\*\\s*\\*\\n' --verticalSeparator '^\\n-\\s*-\\s*-\\n' --disableAutoOpen",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toastal/Did-You-Get-The-Message-Commanding-the-New-Elm-Architecture.git"
+  },
+  "author": "Kyle J. Kress",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toastal/Did-You-Get-The-Message-Commanding-the-New-Elm-Architecture/issues"
+  },
+  "homepage": "https://github.com/toastal/Did-You-Get-The-Message-Commanding-the-New-Elm-Architecture#readme"
+}
