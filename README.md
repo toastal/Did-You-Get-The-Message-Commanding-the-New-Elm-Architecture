@@ -1,4 +1,4 @@
-# Did You Get the Message: Command the Elm Architecture
+# Did You Get the Message?: Commanding the Elm Architecture
 
 
 - - -
