@@ -26,7 +26,7 @@ But before we go more into that…
 * * *
 
 
-<h2><img alt="jQuery" title="jQuery" src="images/jquery-logo.svg" style="height:15vh;vertical-align:middle;border:0;box-shadow:none"></h2>
+<h2><img alt="jQuery" title="jQuery" src="images/jquery-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none"></h2>
 
 For better or worse, it changed the game.
 
@@ -122,7 +122,7 @@ Literally.
 * * *
 
 
-<img alt="Meme: The 2016 Front-End Leet Toolkit vs. Elm" src="images/elm-vs-front-end.png" style="height:80vh;border:0">
+<img alt="Meme: The 2016 Front-End Leet Toolkit vs. Elm" src="images/elm-vs-front-end.png" style="height:100vh;border:0">
 
 
 * * *
@@ -194,7 +194,7 @@ type Team
     = Mystic
     | Instinct
     | Valor
-    
+
 type Food
     = Vegetable String
     | Fruit String
@@ -202,7 +202,7 @@ type Food
     | Grain String
     | Dairy String
     | NotSureIfFood
-    
+
 type Maybe a
     = Just a
     | Nothing
@@ -258,7 +258,7 @@ p' =
 * * *
 
 
-## <img alt="Babel" title="Babel" src="images/babel-logo.svg" style="height:16vh;vertical-align:middle;border:0;box-shadow:none">
+## <img alt="Babel" title="Babel" src="images/babel-logo.svg" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none">
 
 `elm-make` compiles to ECMAScript 5 so it’s compatible with all the things you care about.
 
@@ -266,7 +266,7 @@ p' =
 * * *
 
 
-## <img alt="Flow" title="Flow" src="images/flow-logo.png" style="height:17vh;vertical-align:middle;border:0;box-shadow:none">
+## <img alt="Flow" title="Flow" src="images/flow-logo.png" style="height:1.1em;vertical-align:middle;border:0;box-shadow:none">
 
 Elm's a strong statically-typed language with type inference.
 
@@ -510,7 +510,7 @@ import {Elm} from "my-thing"
 
 ### [Benchmark](https://lorenzo.github.io/todomvc-perf-comparison/) (some libraries out of date)
 
-<img alt="Elm benchmark" src="images/benchmark.png" style="height:70vh;width:auto;vertical-align:middle;border:0;box-shadow:none">
+<img alt="Elm benchmark" src="images/benchmark.png" style="height:90vh;width:auto;vertical-align:middle;border:0;box-shadow:none">
 
 
 * * *
