@@ -122,7 +122,7 @@ Literally.
 * * *
 
 
-<img alt="Meme: The 2016 Front-End Leet Toolkit vs. Elm" src="images/elm-vs-front-end.png" style="height:100vh;border:0">
+<img alt="Meme: The 2016 Front-End Leet Toolkit vs. Elm" src="images/elm-vs-front-end.png" style="height:100vh;border:0;object-fit:contain;object-position:0 0;box-shadow:none">
 
 
 * * *

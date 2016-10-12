@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "postinstall": "elm package install -y",
-    "start": "reveal-md slides.md --theme 'simple' --highlightTheme 'arduino-light' --separator '^\\n\\*\\s*\\*\\s*\\*\\n' --verticalSeparator '^\\n-\\s*-\\s*-\\n' --disableAutoOpen",
+    "start": "reveal-md slides.md --theme 'simple' --separator '^\\n\\*\\s*\\*\\s*\\*\\n' --verticalSeparator '^\\n-\\s*-\\s*-\\n' --disableAutoOpen",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
