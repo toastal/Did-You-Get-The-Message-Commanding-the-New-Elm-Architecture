@@ -1,7 +1,6 @@
 module LiveCodeComplete exposing (..)
 
 import Html exposing (Html, Attribute, button, div, input, text)
-import Html.App as Html
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick, onInput)
 import String
@@ -46,7 +45,7 @@ view : Model -> Html Msg
 view { reverse, shout } =
     div []
         [ input
-            [ type' "text"
+            [ type_ "text"
             , placeholder "Reverse me"
             , value reverse
             , onInput Reverse
@@ -55,7 +54,7 @@ view { reverse, shout } =
         , div []
             [ text <| String.reverse reverse ]
         , input
-            [ type' "text"
+            [ type_ "text"
             , placeholder "Shout me"
             , value shout
             , onInput Shout
@@ -64,14 +63,14 @@ view { reverse, shout } =
         , div []
             [ text <| String.toUpper shout ]
         , button
-            [ type' "button"
+            [ type_ "button"
             , onClick Exclaim
             ]
             [ text "Exclaim!!" ]
         ]
 
 
-main : Program Never
+main : Program Never Model Msg
 main =
     Html.beginnerProgram
         { model = init

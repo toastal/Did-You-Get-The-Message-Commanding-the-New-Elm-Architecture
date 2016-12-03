@@ -9,7 +9,7 @@ exclaim string =
     string ++ "!"
 
 
-view : List String -> Html
+view : List String -> Html String
 view =
     let
         heading string =
@@ -18,6 +18,6 @@ view =
         heading << String.join " " << List.map exclaim
 
 
-main : Html
+main : Html String
 main =
     view [ "Hello", "Darkness", "My", "Old", "Friend" ]
