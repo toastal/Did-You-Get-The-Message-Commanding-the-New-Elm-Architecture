@@ -187,6 +187,7 @@ Note the type signature, implicit return, & JS's implicit type coercion
 
 - - -
 
+
 ### Union Types (Tagged Union, Enum)
 
 ```elm
@@ -207,6 +208,7 @@ type Maybe a
     = Just a
     | Nothing
 ```
+
 
 - - -
 
@@ -233,6 +235,7 @@ length list =
             1 + length tail
 ```
 
+
 - - -
 
 
@@ -248,8 +251,8 @@ p : Point
 p =
     { x = 0, y = 1 }
 
-p' : Point
-p' =
+p1 : Point
+p1 =
     { p | x = 2 }
 -- { x = 2, y = 1 }
 ```
@@ -320,14 +323,14 @@ exclaim : String -> String
 exclaim string =
     string ++ "!"
 
-view : List String -> Html
+view : List String -> Html String
 view =
     let
         heading string = h2 [] [ text string ]
     in
         heading << String.join " " << List.map exclaim
 
-main : Html
+main : Html String
 main =
     view ["Hello", "Darkness", "My",  "Old", "Friend"]
 ```
@@ -394,6 +397,7 @@ import Html.Events exposing (onInput)
 import String
 
 
+main : Program Never Model Msg
 main =
   Html.beginnerProgram
     { model = init
@@ -410,7 +414,6 @@ main =
 
 ```elm
 import Html exposing (Html, Attribute, div, input, text)
-import Html.App as Html
 import Html.Attributes exposing (..)
 import Html.Events exposing (onInput)
 import String
@@ -454,6 +457,7 @@ view { reverse, shout } =
     ]
 
 
+main : Program Never Model Msg
 main =
   Html.beginnerProgram
     { model = init
@@ -530,7 +534,7 @@ import {Elm} from "my-thing"
 
 
 # Sorry, React
-## It’s not that you're a bad framework…
+## It’s not that you’re a bad framework…
 
 
 - - -
