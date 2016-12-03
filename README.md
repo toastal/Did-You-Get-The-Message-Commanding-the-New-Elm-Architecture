@@ -15,7 +15,7 @@ Run stuff
 
 ```
 npm start
-elm-reactor -p 8000
+npm run reactor
 ```
 
 
