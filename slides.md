@@ -168,21 +168,21 @@ List.range 1 3
 
 ```elm
 toMoney : Float -> String
-toMoney tbDollaz =
-    "$" ++ toString tbDollaz
+toMoney dollaz =
+    "$" ++ toString dollaz
 -- toMoney 3.14
 --=> "$3.14"
 ```
 
 ```js
-function toMoney(tbDollaz) {
-  return "$" + tbDollaz
+function toMoney(dollaz) {
+  return "$" + dollaz
 }
 // toMoney(3.14)
 //=> "$3.14"
 ```
 
-Note the type signature, implicit return, & JS's implicit type coercion
+Note the type signature, implicit return, & JS’s implicit type coercion
 
 
 - - -
