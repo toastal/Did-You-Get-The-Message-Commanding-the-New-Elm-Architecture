@@ -155,9 +155,9 @@ Multiline strings
 ### Lists
 
 ```elm
-[1..5]
 [1, 2, 3]
 1 :: [2, 3]
+List.range 1 3
 ```
 
 
