@@ -364,7 +364,7 @@ main =
 - - -
 
 
-## The (New) <img alt="Elm" title="Elm" src="images/elm-logo.svg" style="height:0.9em;vertical-align:middle;border:0;box-shadow:none"> Architecture
+## The <img alt="Elm" title="Elm" src="images/elm-logo.svg" style="height:0.9em;vertical-align:middle;border:0;box-shadow:none"> Architecture (TEA)
 
 ```elm
 -- Model aka State
@@ -523,6 +523,7 @@ import {Elm} from "my-thing"
 ## Going deeper
 
 - Effects: Commands, Subscriptions (Random # Gen., HTTP/REST, Time, Animation, Web Sockets)
+- JSON decoding & URL parsing (via applicative functors)
 - Nested Components
 - Ports
 - Results: Error Handling
